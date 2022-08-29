@@ -28,6 +28,8 @@ commit
             保存并退出 :wq (英文编辑 write quit)
     git commit -m "第三次提交"  //跳过vim编辑器
     git commit -m "fix(text):change content"  //git commit风格 fix(文件名/模块)：说明 国际项目
+            git commit规范，约定式提交：https://www.conventionalcommits.org/zh-hans/v1.0.0/
+            git闯关式学习，learn git branching：https://learngitbranching.js.org/?locale=zh_CN
 
 查看提交日志
 log
@@ -35,7 +37,31 @@ log
 回退到之前版本
 
     git log //复制之前的commit id
-    git reset --hard id  //回退到之前的版本
-   
+    git reset --hard id  //回退到之前的版本 (同时会清空之前版本的之后版本)
+
+分支branch
+branch
+    配合checkout在不同版本中切换
+
+    git branch 0.1 //创建一个分支
+    git branch -a //查看所有分支
+
+    git checkout 0.1 //切换到指定分支
+    git checkout master //切换到主分支
+    git merge 0.2 // 将分支合并到主分支    
 
 
+在github中使用git
+    git branch -M main //创建一个main分支并把主分支切换为main
+    git remote add origin https://github.com/masterpanda007/re01-.git //给git项目添加一个远程的仓库地址，这个地址相当于一个网盘地址
+    git push -u origin main //把git项目推送上传到网盘，即github   
+        ssl网络问题解决方案  git config --global http.sslverify false 
+    
+参与开源项目
+    git clone https://github.com/masterpanda007/midorg.git . /把网盘的仓库克隆到本地电脑
+    git remote -v 查看远程仓库链接(默认只有自己的仓库链接)
+    git remote add upstream https://github.com/masterpanda007/midorg.git //添加上游仓库链接
+    git checkout -b kwc //创建并进入某分支
+    git push -u origin kwc //把kwc分支push到github
+    git fetch upstream //从上游更新最新代码
+    git merge upstream/main //把远程的最新代码合并到自己的分支中
