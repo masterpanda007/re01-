@@ -1,0 +1,3 @@
+pwd（print work directory）  显示当前终端所在位置
+ls (listfile) 显示当前目录下的所有文件
+cd (change directory)  切换目录
