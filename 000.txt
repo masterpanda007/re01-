@@ -31,7 +31,11 @@ commit
 
 查看提交日志
 log
-    git log
-    0000000
+    git log  //q 推出编辑模式
+回退到之前版本
+
+    git log //复制之前的commit id
+    git reset --hard id  //回退到之前的版本
+   
 
 
