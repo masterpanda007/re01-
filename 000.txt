@@ -27,6 +27,7 @@ commit
             推出编辑模式 esc
             保存并退出 :wq (英文编辑 write quit)
     git commit -m "第三次提交"  //跳过vim编辑器
+    git commit -m "fix(text):change content"  //git commit风格 fix(文件名/模块)：说明 国际项目
 
 查看提交日志
 log
