@@ -32,5 +32,6 @@ commit
 查看提交日志
 log
     git log
+    0000000
 
 
