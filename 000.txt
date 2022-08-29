@@ -1,3 +1,30 @@
 pwd（print work directory）  显示当前终端所在位置
 ls (listfile) 显示当前目录下的所有文件
 cd (change directory)  切换目录
+
+git 
+
+配置--用户名和邮箱
+config
+
+    git config --global user.name "lovedz"
+    git config --global user.email "1151353342@qq.com"
+
+暂时保存--文件
+init 
+    git init //初始化当前目录 创建一个.git隐藏文件夹
+
+add
+    git add 000.txt   //  000.txt  表示文件名
+    git add .   //  .  表示当前终端所在目下的所有文件文件名
+
+
+提交--将暂时保存的文件提交
+commit
+    git commit
+        vim终端编辑器
+            进入编辑模式 a/i
+            推出编辑模式 esc
+            保存并退出 :wq (英文编辑 write quit)
+
+
